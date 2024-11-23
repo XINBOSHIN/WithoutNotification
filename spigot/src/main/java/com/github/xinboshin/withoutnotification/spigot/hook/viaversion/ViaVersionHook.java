@@ -1,7 +1,7 @@
-package com.github.kaspiandev.antipopup.spigot.hook.viaversion;
+package com.github.xinboshin.withoutnotifications.spigot.hook.viaversion;
 
-import com.github.kaspiandev.antipopup.spigot.AntiPopup;
-import com.github.kaspiandev.antipopup.spigot.hook.Hook;
+import com.github.xinboshin.withoutnotifications.spigot.withoutnotifications;
+import com.github.xinboshin.withoutnotifications.spigot.hook.Hook;
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.manager.server.ServerVersion;
 import com.viaversion.viaversion.ViaVersionPlugin;
@@ -46,7 +46,7 @@ public class ViaVersionHook implements Hook {
                 if (serverVersion.is(modifierInstance.getComparison(), modifierInstance.getVersion())) {
                     modifierInstance.modify();
                     registeredModifiers.add(modifierInstance);
-                    AntiPopup.getInstance().getLogger().info(() -> getRegisteredMessage(modifierInstance));
+                    withoutnotifications.getInstance().getLogger().info(() -> getRegisteredMessage(modifierInstance));
                 }
             } catch (IllegalAccessException | InvocationTargetException
                      | NoSuchMethodException | InstantiationException ignored) {}

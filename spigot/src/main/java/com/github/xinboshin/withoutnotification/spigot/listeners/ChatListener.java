@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.spigot.listeners;
+package com.github.xinboshin.withoutnotifications.spigot.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

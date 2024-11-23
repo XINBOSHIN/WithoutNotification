@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.message;
+package com.github.xinboshin.withoutnotifications.message;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
@@ -14,21 +14,21 @@ public class ConsoleMessages {
 
     public static final String[] ASK_SETUP = {
             "----------------------[ READ ME ]----------------------",
-            "This is your first startup with AntiPopup.",
-            "Run command 'antipopup setup' to disable",
+            "This is your first startup with withoutnotifications.",
+            "Run command 'withoutnotifications setup' to disable",
             "enforce-secure-profile for better experience.",
             "This will not force players to sign their messages.",
-            "Thanks for using AntiPopup!",
+            "Thanks for using withoutnotifications!",
             "-------------------------------------------------------"
     };
 
     public static final String[] ASK_BSTATS = {
             "------------------------[ READ ME ]------------------------",
-            "This is your first startup with AntiPopup.",
+            "This is your first startup with withoutnotifications.",
             "I would like to kindly ask you to enable bstats",
-            "configuration value to help me improve AntiPopup.",
+            "configuration value to help me improve withoutnotifications.",
             "Because I respect your freedom it's disabled by default.",
-            "Thanks for using AntiPopup! (you will not see this again)",
+            "Thanks for using withoutnotifications! (you will not see this again)",
             "-----------------------------------------------------------"
     };
 

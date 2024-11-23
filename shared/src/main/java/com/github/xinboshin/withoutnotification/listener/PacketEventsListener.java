@@ -1,6 +1,6 @@
-package com.github.kaspiandev.antipopup.listener;
+package com.github.xinboshin.withoutnotifications.listener;
 
-import com.github.kaspiandev.antipopup.platform.Platform;
+import com.github.xinboshin.withoutnotifications.platform.Platform;
 import com.github.retrooper.packetevents.event.*;
 import com.github.retrooper.packetevents.protocol.packettype.PacketType;
 import com.github.retrooper.packetevents.protocol.packettype.PacketTypeCommon;

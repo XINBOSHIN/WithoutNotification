@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.spigot.hook;
+package com.github.xinboshin.withoutnotifications.spigot.hook;
 
 public interface Hook {
 

@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.spigot.nms;
+package com.github.xinboshin.withoutnotifications.spigot.nms;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

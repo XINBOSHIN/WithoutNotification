@@ -1,6 +1,6 @@
-package com.github.kaspiandev.antipopup.nms.v1_20_1;
+package com.github.xinboshin.withoutnotifications.nms.v1_20_1;
 
-import com.github.kaspiandev.antipopup.spigot.nms.PacketInjector;
+import com.github.xinboshin.withoutnotifications.spigot.nms.PacketInjector;
 import io.netty.channel.*;
 import net.minecraft.network.Connection;
 import net.minecraft.network.chat.ChatType;
@@ -20,7 +20,7 @@ import java.util.Optional;
 @SuppressWarnings("unused")
 public class PlayerInjector_v1_20_1 implements PacketInjector {
 
-    private static final String HANDLER_NAME = "antipopup_handler";
+    private static final String HANDLER_NAME = "withoutnotifications_handler";
     private static Field connectionField;
 
     static {

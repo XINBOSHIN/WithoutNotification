@@ -1,8 +1,8 @@
-package com.github.kaspiandev.antipopup.velocity;
+package com.github.xinboshin.withoutnotifications.velocity;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
-import com.github.kaspiandev.antipopup.listener.PacketEventsListener;
-import com.github.kaspiandev.antipopup.velocity.platform.VelocityPlatform;
+import com.github.xinboshin.withoutnotifications.config.APConfig;
+import com.github.xinboshin.withoutnotifications.listener.PacketEventsListener;
+import com.github.xinboshin.withoutnotifications.velocity.platform.VelocityPlatform;
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.event.PacketListenerPriority;
 import com.google.inject.Inject;
@@ -21,7 +21,7 @@ import java.nio.file.Path;
 @Plugin(
         id = "antipopup",
         name = "AntiPopup",
-        authors = "KaspianDev",
+        authors = "xinboshin",
         version = BuildConstants.VERSION
 )
 public class AntiPopup {

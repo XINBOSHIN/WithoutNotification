@@ -1,6 +1,6 @@
-package com.github.kaspiandev.antipopup.nms.v1_19_3;
+package com.github.xinboshin.withoutnotifications.nms.v1_19_3;
 
-import com.github.kaspiandev.antipopup.spigot.nms.PacketInjector;
+import com.github.xinboshin.withoutnotifications.spigot.nms.PacketInjector;
 import io.netty.channel.*;
 import net.minecraft.network.chat.ChatType;
 import net.minecraft.network.chat.Component;
@@ -17,7 +17,7 @@ import java.util.Optional;
 @SuppressWarnings("unused")
 public class PlayerInjector_v1_19_3 implements PacketInjector {
 
-    private static final String HANDLER_NAME = "antipopup_handler";
+    private static final String HANDLER_NAME = "withoutnotifications_handler";
 
     public void inject(Player player) {
         ChannelDuplexHandler duplexHandler = new ChannelDuplexHandler() {

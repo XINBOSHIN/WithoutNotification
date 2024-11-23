@@ -1,6 +1,6 @@
-package com.github.kaspiandev.antipopup.platform;
+package com.github.xinboshin.withoutnotifications.platform;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
+import com.github.xinboshin.withoutnotifications.config.APConfig;
 
 import java.util.UUID;
 

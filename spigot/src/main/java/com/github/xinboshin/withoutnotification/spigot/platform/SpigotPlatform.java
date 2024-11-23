@@ -1,7 +1,7 @@
-package com.github.kaspiandev.antipopup.spigot.platform;
+package com.github.xinboshin.withoutnotifications.spigot.platform;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
-import com.github.kaspiandev.antipopup.platform.Platform;
+import com.github.xinboshin.withoutnotifications.config.APConfig;
+import com.github.xinboshin.withoutnotifications.platform.Platform;
 import org.bukkit.Bukkit;
 
 import java.util.Objects;

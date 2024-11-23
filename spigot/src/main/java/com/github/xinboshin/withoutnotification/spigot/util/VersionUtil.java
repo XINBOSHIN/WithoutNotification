@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.spigot.util;
+package com.github.xinboshin.withoutnotifications.spigot.util;
 
 import org.bukkit.Bukkit;
 

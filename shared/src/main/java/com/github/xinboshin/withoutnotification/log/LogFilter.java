@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.log;
+package com.github.xinboshin.withoutnotifications.log;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;

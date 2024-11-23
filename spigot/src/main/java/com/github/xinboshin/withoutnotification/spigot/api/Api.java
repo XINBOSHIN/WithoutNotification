@@ -1,7 +1,7 @@
-package com.github.kaspiandev.antipopup.spigot.api;
+package com.github.xinboshin.withoutnotifications.spigot.api;
 
-import com.github.kaspiandev.antipopup.message.ConsoleMessages;
-import com.github.kaspiandev.antipopup.spigot.AntiPopup;
+import com.github.xinboshin.withoutnotifications.message.ConsoleMessages;
+import com.github.xinboshin.withoutnotifications.spigot.withoutnotifications;
 import com.github.retrooper.packetevents.PacketEvents;
 
 import java.io.FileInputStream;
@@ -25,14 +25,14 @@ public class Api {
      *
      * @param time Delay of the setup.
      */
-    public static void setupAntiPopup(int time, boolean silent) {
+    public static void setupwithoutnotifications(int time, boolean silent) {
         try {
-            try (FileInputStream in = new FileInputStream(AntiPopup.getPropertiesFile())) {
+            try (FileInputStream in = new FileInputStream(withoutnotifications.getPropertiesFile())) {
                 Properties props = new Properties();
                 props.load(in);
                 if (Boolean.parseBoolean(props.getProperty("enforce-secure-profile"))) {
                     props.setProperty("enforce-secure-profile", String.valueOf(false));
-                    try (FileOutputStream out = new FileOutputStream(AntiPopup.getPropertiesFile())) {
+                    try (FileOutputStream out = new FileOutputStream(withoutnotifications.getPropertiesFile())) {
                         props.store(out, "Minecraft server properties");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);

@@ -1,6 +1,6 @@
-name: AntiPopup
+name: withoutnotifications
 version: '${version}'
-main: com.github.kaspiandev.antipopup.spigot.AntiPopup
+main: com.github.xinboshin.withoutnotifications.spigot.withoutnotifications
 api-version: 1.17
 load: POSTWORLD
 softdepend:
@@ -13,7 +13,7 @@ softdepend:
 authors: [ Kaspian ]
 description: A plugin that removed annoying unsafe server popup.
 commands:
-  antipopup:
-    description: Main antipopup command.
-    permission: antipopup.commands
+  withoutnotifications:
+    description: Main withoutnotifications command.
+    permission: withoutnotifications.commands
 folia-supported: true

@@ -1,7 +1,7 @@
-package com.github.kaspiandev.antipopup.spigot;
+package com.github.xinboshin.withoutnotifications.spigot;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
-import com.github.kaspiandev.antipopup.spigot.api.Api;
+import com.github.xinboshin.withoutnotifications.config.APConfig;
+import com.github.xinboshin.withoutnotifications.spigot.api.Api;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -26,7 +26,7 @@ public class CommandRegister implements CommandExecutor {
         if (args.length == 1
                 && sender instanceof ConsoleCommandSender) {
             if ("setup".equals(args[0])) {
-                Api.setupAntiPopup(100, false);
+                Api.setupwithoutnotifications(100, false);
             } else if ("reload".equals(args[0])) {
                 config.reload();
                 getLogger().info("Config has been reloaded.");

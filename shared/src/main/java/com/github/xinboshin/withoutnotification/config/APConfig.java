@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.config;
+package com.github.xinboshin.withoutnotifications.config;
 
 import dev.dejvokep.boostedyaml.YamlDocument;
 import dev.dejvokep.boostedyaml.dvs.versioning.BasicVersioning;

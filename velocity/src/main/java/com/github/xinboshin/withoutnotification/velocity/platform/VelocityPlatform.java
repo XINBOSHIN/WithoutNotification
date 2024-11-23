@@ -1,7 +1,7 @@
-package com.github.kaspiandev.antipopup.velocity.platform;
+package com.github.xinboshin.withoutnotifications.velocity.platform;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
-import com.github.kaspiandev.antipopup.platform.Platform;
+import com.github.xinboshin.withoutnotifications.config.APConfig;
+import com.github.xinboshin.withoutnotifications.platform.Platform;
 import com.velocitypowered.api.proxy.ProxyServer;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.velocity;
+package com.github.xinboshin.withoutnotifications.velocity;
 
 // The constants are replaced before compilation
 public class BuildConstants {

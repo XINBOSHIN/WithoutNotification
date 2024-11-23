@@ -1,6 +1,6 @@
-package com.github.kaspiandev.antipopup.spigot.hook;
+package com.github.xinboshin.withoutnotifications.spigot.hook;
 
-import com.github.kaspiandev.antipopup.spigot.AntiPopup;
+import com.github.xinboshin.withoutnotifications.spigot.AntiPopup;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 

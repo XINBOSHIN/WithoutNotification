@@ -19,7 +19,7 @@ tasks {
 }
 
 allprojects {
-    group = "com.github.kaspiandev.antipopup"
+    group = "com.github.xinboshin.withoutnotifications"
     version = "10"
 
     repositories {
