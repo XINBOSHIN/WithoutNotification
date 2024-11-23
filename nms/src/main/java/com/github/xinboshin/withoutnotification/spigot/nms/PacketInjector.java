@@ -1,4 +1,4 @@
-package com.github.kaspiandev.antipopup.spigot.nms;
+package com.github.xinboshin.withoutnotification.spigot.nms;
 
 import org.bukkit.entity.Player;
 
