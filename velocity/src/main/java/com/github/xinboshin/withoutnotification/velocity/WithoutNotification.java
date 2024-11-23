@@ -1,8 +1,8 @@
-package com.github.kaspiandev.antipopup.velocity;
+package com.github.xinboshin.antipopup.velocity;
 
-import com.github.kaspiandev.antipopup.config.APConfig;
-import com.github.kaspiandev.antipopup.listener.PacketEventsListener;
-import com.github.kaspiandev.antipopup.velocity.platform.VelocityPlatform;
+import com.github.xinboshin.antipopup.config.APConfig;
+import com.github.xinboshin.antipopup.listener.PacketEventsListener;
+import com.github.xinboshin.antipopup.velocity.platform.VelocityPlatform;
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.event.PacketListenerPriority;
 import com.google.inject.Inject;
@@ -19,12 +19,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @Plugin(
-        id = "antipopup",
-        name = "AntiPopup",
-        authors = "KaspianDev",
+        id = "withoutnotification",
+        name = "WithoutNotification",
+        authors = "XINBOSHIN",
         version = BuildConstants.VERSION
 )
-public class AntiPopup {
+public class WithoutNotification {
 
     private final ProxyServer server;
     private final APConfig config;
@@ -32,7 +32,7 @@ public class AntiPopup {
     private final Path dataDirectory;
 
     @Inject
-    public AntiPopup(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
+    public WithoutNotification(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
         this.server = server;
         this.logger = logger;
         this.config = new APConfig(dataDirectory.toFile(), this.getClass().getClassLoader());
