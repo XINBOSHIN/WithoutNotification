@@ -46,7 +46,7 @@ public class ViaVersionHook implements Hook {
                 if (serverVersion.is(modifierInstance.getComparison(), modifierInstance.getVersion())) {
                     modifierInstance.modify();
                     registeredModifiers.add(modifierInstance);
-                    withoutnotifications.getInstance().getLogger().info(() -> getRegisteredMessage(modifierInstance));
+                    WithoutNotifications.getInstance().getLogger().info(() -> getRegisteredMessage(modifierInstance));
                 }
             } catch (IllegalAccessException | InvocationTargetException
                      | NoSuchMethodException | InstantiationException ignored) {}
