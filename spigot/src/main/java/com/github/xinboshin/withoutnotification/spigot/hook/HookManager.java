@@ -1,6 +1,5 @@
 package com.github.xinboshin.withoutnotifications.spigot.hook;
 
-import com.github.xinboshin.withoutnotifications.spigot.AntiPopup;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 
@@ -23,7 +22,7 @@ public class HookManager {
         PluginManager pluginManager = Bukkit.getServer().getPluginManager();
         for (Hook hook : hooks) {
             if (pluginManager.isPluginEnabled(hook.getPluginName())) {
-                AntiPopup.getInstance().getLogger().info("Loaded a hook for " + hook.getPluginName() + ".");
+                com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications.getInstance().getLogger().info("Loaded a hook for " + hook.getPluginName() + ".");
                 hook.register();
             }
         }

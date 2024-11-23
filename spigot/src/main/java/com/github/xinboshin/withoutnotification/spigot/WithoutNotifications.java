@@ -43,9 +43,9 @@ import java.util.concurrent.TimeUnit;
 
 import static org.bukkit.Bukkit.getPluginManager;
 
-public final class AntiPopup extends JavaPlugin {
+public final class WithoutNotifications extends JavaPlugin {
 
-    private static AntiPopup instance;
+    private static com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications instance;
     private static File propertiesFile;
     private static APConfig config;
     private static FoliaLib foliaLib;
@@ -58,7 +58,7 @@ public final class AntiPopup extends JavaPlugin {
         return propertiesFile;
     }
 
-    public static AntiPopup getInstance() {
+    public static com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications getInstance() {
         return instance;
     }
 
