@@ -1,0 +1,53 @@
+plugins {
+    id "java"
+    id "io.github.goooler.shadow" version "${shadowVer}"
+    id "org.jetbrains.gradle.plugin.idea-ext" version "1.0.1"
+}
+
+dependencies {
+    implementation project(path: ":spigot", configuration: "shadow")
+    implementation project(path: ":velocity", configuration: "shadow")
+}
+
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
+    shadowJar {
+        archiveClassifier = ""
+    }
+}
+
+allprojects {
+    group = "com.github.kaspiandev.antipopup"
+    version = "10"
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            name = "spigotmc-repo"
+            url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/groups/public/"
+        }
+        maven {
+            name = "No."
+            url = "https://repo.viaversion.com"
+        }
+        maven {
+            name = "codemc"
+            url = "https://repo.codemc.io/repository/maven-releases/"
+        }
+    }
+
+}
+
+tasks.register("buildAndMove", Copy) {
+    from jar
+    into "/home/kaspian/Documents/Minecraft/SpigotServer/plugins"
+
+    dependsOn(tasks.build)
+}
