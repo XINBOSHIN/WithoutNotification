@@ -19,12 +19,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @Plugin(
-        id = "antipopup",
-        name = "AntiPopup",
+        id = "withoutnotifications",
+        name = "withoutnotifications",
         authors = "xinboshin",
         version = BuildConstants.VERSION
 )
-public class AntiPopup {
+public class withoutnotifications {
 
     private final ProxyServer server;
     private final APConfig config;
@@ -32,7 +32,7 @@ public class AntiPopup {
     private final Path dataDirectory;
 
     @Inject
-    public AntiPopup(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
+    public WithoutNotifications(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
         this.server = server;
         this.logger = logger;
         this.config = new APConfig(dataDirectory.toFile(), this.getClass().getClassLoader());

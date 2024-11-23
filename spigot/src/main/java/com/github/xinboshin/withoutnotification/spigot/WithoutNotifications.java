@@ -139,7 +139,7 @@ public final class WithoutNotifications extends JavaPlugin {
             }
         }
 
-        Objects.requireNonNull(this.getCommand("antipopup")).setExecutor(new CommandRegister(config));
+        Objects.requireNonNull(this.getCommand("withoutnotifications")).setExecutor(new CommandRegister(config));
         getLogger().info("Commands registered.");
 
         if (config.isFilterNotSecure()) {
@@ -148,7 +148,7 @@ public final class WithoutNotifications extends JavaPlugin {
         }
 
         foliaLib.getImpl().runLater(() -> {
-            if (config.isAutoSetup()) Api.setupAntiPopup(80, true);
+            if (config.isAutoSetup()) Api.setupWithoutNotifications(80, true);
             if (config.isFirstRun()) {
                 try {
                     FileInputStream in = new FileInputStream(propertiesFile);

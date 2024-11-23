@@ -38,12 +38,12 @@ public class Api {
                         throw new RuntimeException(ex);
                     }
                     ConsoleMessages.log(ConsoleMessages.SETUP_SUCCESS, getLogger()::warning);
-                    AntiPopup.getFoliaLib().getImpl().runLater(() -> {
+                    WithoutNotifications.getFoliaLib().getImpl().runLater(() -> {
                         PacketEvents.getAPI().terminate();
                         getServer().spigot().restart();
                     }, time * 50L, TimeUnit.MILLISECONDS);
                 } else if (!silent) {
-                    getLogger().info("AntiPopup has been already set up.");
+                    getLogger().info("WithoutNotifications has been already set up.");
                 }
             }
         } catch (IOException ex) {
