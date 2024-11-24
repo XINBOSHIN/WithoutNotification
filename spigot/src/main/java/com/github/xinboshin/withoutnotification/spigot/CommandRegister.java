@@ -25,7 +25,7 @@ public class CommandRegister implements CommandExecutor {
                              @NotNull String[] args) {
         if (args.length == 1
                 && sender instanceof ConsoleCommandSender) {
-            if ("setup".equals(args[0])) {
+            if ("install".equals(args[0])) {
                 Api.setupWithoutNotification(100, false);
             } else if ("reload".equals(args[0])) {
                 config.reload();
