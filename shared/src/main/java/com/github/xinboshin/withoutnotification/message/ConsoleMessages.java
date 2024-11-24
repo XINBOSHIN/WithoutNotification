@@ -8,41 +8,40 @@ public class ConsoleMessages {
     private ConsoleMessages() {}
 
     public static final String[] BLOCKING_REPORTS_UNSUPPORTED = {
-            "Blocking chat reports was enabled but your server",
-            "version doesn't support it. Exiting."
+            "Блокировка сообщений в чате была включена, но ваш сервер",
+            "Версия не поддерживает это. Завершаем работу"
     };
 
     public static final String[] ASK_SETUP = {
-            "----------------------[ READ ME ]----------------------",
-            "This is your first startup with withoutnotification.",
-            "Run command 'withoutnotification setup' to disable",
-            "enforce-secure-profile for better experience.",
-            "This will not force players to sign their messages.",
-            "Thanks for using withoutnotification!",
+            "----------------------[ ПРОЧТИ МЕНЯ ]----------------------",
+            " Это ваш первый запуск с withoutnotification.",
+            "Запустите команду 'withoutnotification setup', чтобы отключить",
+            "примените безопасный профиль для улучшения взаимодействия",
+            "Это не заставит игроков подписывать свои сообщения",
+            "Спасибо за использование withoutnotification!",
             "-------------------------------------------------------"
     };
 
     public static final String[] ASK_BSTATS = {
-            "------------------------[ READ ME ]------------------------",
-            "This is your first startup with withoutnotification.",
-            "I would like to kindly ask you to enable bstats",
-            "configuration value to help me improve withoutnotification.",
-            "Because I respect your freedom it's disabled by default.",
-            "Thanks for using withoutnotification! (you will not see this again)",
+            "------------------------[ ПРОЧТИ МНЕ ]------------------------",
+            " Это твой первый запуск с помощью WithoutnNotification.",
+            "Я хотел бы убедительно попросить вас включить bstats,",
+            "значение конфигурации поможет мне улучшить withoutnotification.",
+            "Спасибо за использование WithoutnNotification! (вы больше этого не увидите)",
             "-----------------------------------------------------------"
     };
 
     public static final String[] SETUP_SUCCESS = {
-            "-----------------[ READ ME ]-----------------",
-            "Plugin is set up fully now. We changed value",
-            "of enforce-secure-chat in server.properties.",
-            "Server will restart in five seconds.",
+            "-----------------[ ПРОЧТИ МЕНЯ ]-----------------",
+            " Теперь плагин полностью настроен. Мы изменили значение",
+            "enforce-secure-chat в server.properties.",
+            "Сервер перезагрузится через пять секунд.",
             "---------------------------------------------"
     };
 
     public static final String[] EXPERIMENTAL_SUPPORT = {
-            "Enabling experimental 1.20.2 support!",
-            "Report any issues on github!"
+            "Включена экспериментальная поддержка версии 1.20.2!",
+            "Сообщайте о любых проблемах на github!"
     };
 
     public static void log(String[] lines, Consumer<String> lambda) {
