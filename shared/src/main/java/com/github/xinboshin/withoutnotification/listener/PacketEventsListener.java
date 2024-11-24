@@ -1,6 +1,6 @@
-package com.github.xinboshin.withoutnotifications.listener;
+package com.github.xinboshin.withoutnotification.listener;
 
-import com.github.xinboshin.withoutnotifications.platform.Platform;
+import com.github.xinboshin.withoutnotification.platform.Platform;
 import com.github.retrooper.packetevents.event.*;
 import com.github.retrooper.packetevents.protocol.packettype.PacketType;
 import com.github.retrooper.packetevents.protocol.packettype.PacketTypeCommon;

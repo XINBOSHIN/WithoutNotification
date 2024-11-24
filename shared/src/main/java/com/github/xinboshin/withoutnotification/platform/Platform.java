@@ -1,6 +1,6 @@
-package com.github.xinboshin.withoutnotifications.platform;
+package com.github.xinboshin.withoutnotification.platform;
 
-import com.github.xinboshin.withoutnotifications.config.APConfig;
+import com.github.xinboshin.withoutnotification.config.APConfig;
 
 import java.util.UUID;
 

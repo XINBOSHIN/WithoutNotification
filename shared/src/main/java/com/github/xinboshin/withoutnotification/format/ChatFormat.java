@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.format;
+package com.github.xinboshin.withoutnotification.format;
 
 public interface ChatFormat {
 

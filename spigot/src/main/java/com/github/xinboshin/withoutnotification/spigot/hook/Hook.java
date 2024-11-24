@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.spigot.hook;
+package com.github.xinboshin.withoutnotification.spigot.hook;
 
 public interface Hook {
 

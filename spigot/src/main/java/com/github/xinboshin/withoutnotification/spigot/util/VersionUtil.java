@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.spigot.util;
+package com.github.xinboshin.withoutnotification.spigot.util;
 
 import org.bukkit.Bukkit;
 

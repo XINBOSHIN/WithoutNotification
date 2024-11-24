@@ -25,10 +25,10 @@ tasks {
     }
     shadowJar {
         minimize()
-        relocate("io.github.retrooper.packetevents", "com.github.xinboshin.withoutnotifications.libs.packetevents.velocity")
-        relocate("com.github.retrooper.packetevents", "com.github.xinboshin.withoutnotifications.libs.packetevents.api")
-        relocate("net.kyori", "com.github.xinboshin.withoutnotifications.libs.kyori")
-        relocate("org.bstats", "com.github.xinboshin.withoutnotifications.libs.bstats")
+        relocate("io.github.retrooper.packetevents", "com.github.xinboshin.withoutnotification.libs.packetevents.velocity")
+        relocate("com.github.retrooper.packetevents", "com.github.xinboshin.withoutnotification.libs.packetevents.api")
+        relocate("net.kyori", "com.github.xinboshin.withoutnotification.libs.kyori")
+        relocate("org.bstats", "com.github.xinboshin.withoutnotification.libs.bstats")
     }
 }
 

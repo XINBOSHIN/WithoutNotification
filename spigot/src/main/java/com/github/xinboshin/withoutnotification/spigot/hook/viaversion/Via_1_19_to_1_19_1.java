@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.spigot.hook.viaversion;
+package com.github.xinboshin.withoutnotification.spigot.hook.viaversion;
 
 import com.github.retrooper.packetevents.manager.server.ServerVersion;
 import com.github.retrooper.packetevents.manager.server.VersionComparison;

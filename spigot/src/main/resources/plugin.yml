@@ -1,6 +1,6 @@
-name: withoutnotifications
+name: withoutnotification
 version: '${version}'
-main: com.github.xinboshin.withoutnotifications.spigot.withoutnotifications
+main: com.github.xinboshin.withoutnotification.spigot.withoutnotification
 api-version: 1.17
 load: POSTWORLD
 softdepend:
@@ -13,7 +13,7 @@ softdepend:
 authors: [ Kaspian ]
 description: A plugin that removed annoying unsafe server popup.
 commands:
-  withoutnotifications:
-    description: Main withoutnotifications command.
-    permission: withoutnotifications.commands
+  withoutnotification:
+    description: Main withoutnotification command.
+    permission: withoutnotification.commands
 folia-supported: true

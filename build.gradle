@@ -19,8 +19,8 @@ tasks {
 }
 
 allprojects {
-    group = "com.github.xinboshin.withoutnotifications"
-    version = "10"
+    group = "com.github.xinboshin.withoutnotification"
+    version = "1.0"
 
     repositories {
         mavenCentral()

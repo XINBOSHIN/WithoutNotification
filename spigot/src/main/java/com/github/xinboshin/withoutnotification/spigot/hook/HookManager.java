@@ -1,5 +1,6 @@
-package com.github.xinboshin.withoutnotifications.spigot.hook;
+package com.github.xinboshin.withoutnotification.spigot.hook;
 
+import com.github.xinboshin.withoutnotification.spigot.WithoutNotification;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 
@@ -22,7 +23,7 @@ public class HookManager {
         PluginManager pluginManager = Bukkit.getServer().getPluginManager();
         for (Hook hook : hooks) {
             if (pluginManager.isPluginEnabled(hook.getPluginName())) {
-                com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications.getInstance().getLogger().info("Loaded a hook for " + hook.getPluginName() + ".");
+                WithoutNotification.getInstance().getLogger().info("Loaded a hook for " + hook.getPluginName() + ".");
                 hook.register();
             }
         }

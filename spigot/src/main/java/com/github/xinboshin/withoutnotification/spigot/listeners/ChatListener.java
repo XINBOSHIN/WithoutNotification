@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.spigot.listeners;
+package com.github.xinboshin.withoutnotification.spigot.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

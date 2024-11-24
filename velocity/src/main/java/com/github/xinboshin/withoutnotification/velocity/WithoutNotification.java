@@ -1,8 +1,8 @@
-package com.github.xinboshin.withoutnotifications.velocity;
+package com.github.xinboshin.withoutnotification.velocity;
 
-import com.github.xinboshin.withoutnotifications.config.APConfig;
-import com.github.xinboshin.withoutnotifications.listener.PacketEventsListener;
-import com.github.xinboshin.withoutnotifications.velocity.platform.VelocityPlatform;
+import com.github.xinboshin.withoutnotification.config.APConfig;
+import com.github.xinboshin.withoutnotification.listener.PacketEventsListener;
+import com.github.xinboshin.withoutnotification.velocity.platform.VelocityPlatform;
 import com.github.retrooper.packetevents.PacketEvents;
 import com.github.retrooper.packetevents.event.PacketListenerPriority;
 import com.google.inject.Inject;
@@ -19,12 +19,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @Plugin(
-        id = "withoutnotifications",
-        name = "withoutnotifications",
+        id = "withoutnotification",
+        name = "withoutnotification",
         authors = "xinboshin",
-        version = BuildConstants.VERSION
+        version = com.github.xinboshin.withoutnotification.velocity.BuildConstants.VERSION
 )
-public class withoutnotifications {
+public class WithoutNotification {
 
     private final ProxyServer server;
     private final APConfig config;
@@ -32,7 +32,7 @@ public class withoutnotifications {
     private final Path dataDirectory;
 
     @Inject
-    public WithoutNotifications(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
+    public WithoutNotification(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) throws IOException {
         this.server = server;
         this.logger = logger;
         this.config = new APConfig(dataDirectory.toFile(), this.getClass().getClassLoader());

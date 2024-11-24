@@ -1,8 +1,8 @@
-package com.github.xinboshin.withoutnotifications.spigot;
+package com.github.xinboshin.withoutnotification.spigot;
 
-import com.github.xinboshin.withoutnotifications.config.APConfig;
-import com.github.xinboshin.withoutnotifications.listener.PacketEventsListener;
-import com.github.xinboshin.withoutnotifications.log.LogFilter;
+import com.github.xinboshin.withoutnotification.config.APConfig;
+import com.github.xinboshin.withoutnotification.listener.PacketEventsListener;
+import com.github.xinboshin.withoutnotification.log.LogFilter;
 import com.github.xinboshin.withoutnotification.message.ConsoleMessages;
 import com.github.xinboshin.withoutnotification.nms.v1_19_2.PlayerInjector_v1_19_2;
 import com.github.xinboshin.withoutnotification.nms.v1_19_3.PlayerInjector_v1_19_3;
@@ -43,9 +43,9 @@ import java.util.concurrent.TimeUnit;
 
 import static org.bukkit.Bukkit.getPluginManager;
 
-public final class WithoutNotifications extends JavaPlugin {
+public final class WithoutNotification extends JavaPlugin {
 
-    private static com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications instance;
+    private static com.github.xinboshin.withoutnotification.spigot.WithoutNotification instance;
     private static File propertiesFile;
     private static APConfig config;
     private static FoliaLib foliaLib;
@@ -58,7 +58,7 @@ public final class WithoutNotifications extends JavaPlugin {
         return propertiesFile;
     }
 
-    public static com.github.xinboshin.withoutnotifications.spigot.WithoutNotifications getInstance() {
+    public static com.github.xinboshin.withoutnotification.spigot.WithoutNotification getInstance() {
         return instance;
     }
 
@@ -139,7 +139,7 @@ public final class WithoutNotifications extends JavaPlugin {
             }
         }
 
-        Objects.requireNonNull(this.getCommand("withoutnotifications")).setExecutor(new CommandRegister(config));
+        Objects.requireNonNull(this.getCommand("withoutnotification")).setExecutor(new CommandRegister(config));
         getLogger().info("Commands registered.");
 
         if (config.isFilterNotSecure()) {
@@ -148,7 +148,7 @@ public final class WithoutNotifications extends JavaPlugin {
         }
 
         foliaLib.getImpl().runLater(() -> {
-            if (config.isAutoSetup()) Api.setupWithoutNotifications(80, true);
+            if (config.isAutoSetup()) Api.setupWithoutNotification(80, true);
             if (config.isFirstRun()) {
                 try {
                     FileInputStream in = new FileInputStream(propertiesFile);

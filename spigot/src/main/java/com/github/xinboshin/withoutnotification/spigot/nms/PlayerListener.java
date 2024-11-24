@@ -1,5 +1,6 @@
-package com.github.xinboshin.withoutnotifications.spigot.nms;
+package com.github.xinboshin.withoutnotification.spigot.nms;
 
+import com.github.xinboshin.withoutnotification.spigot.nms.PacketInjector;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

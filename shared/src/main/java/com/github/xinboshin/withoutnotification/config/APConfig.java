@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.config;
+package com.github.xinboshin.withoutnotification.config;
 
 import dev.dejvokep.boostedyaml.YamlDocument;
 import dev.dejvokep.boostedyaml.dvs.versioning.BasicVersioning;

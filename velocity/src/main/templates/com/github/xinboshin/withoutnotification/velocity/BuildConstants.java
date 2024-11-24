@@ -1,4 +1,4 @@
-package com.github.xinboshin.withoutnotifications.velocity;
+package com.github.xinboshin.withoutnotification.velocity;
 
 // The constants are replaced before compilation
 public class BuildConstants {

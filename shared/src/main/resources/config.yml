@@ -7,7 +7,7 @@ bstats: false
 # Should we remove [Not Secure] from /say?
 # There is a very small chance of catching something
 # that should not be caught. If that happens report the
-# incident to Github issues of withoutnotifications.
+# incident to Github issues of withoutnotification.
 filter-not-secure: true
 
 # We dont need that packet if

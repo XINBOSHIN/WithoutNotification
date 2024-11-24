@@ -1,6 +1,6 @@
-package com.github.xinboshin.withoutnotifications.nms.v1_20_2;
+package com.github.xinboshin.withoutnotification.nms.v1_20_2;
 
-import com.github.xinboshin.withoutnotifications.spigot.nms.PacketInjector;
+import com.github.xinboshin.withoutnotification.spigot.nms.PacketInjector;
 import io.netty.channel.*;
 import net.minecraft.network.Connection;
 import net.minecraft.network.chat.ChatType;
@@ -21,7 +21,7 @@ import java.util.Optional;
 @SuppressWarnings("unused")
 public class PlayerInjector_v1_20_2 implements PacketInjector {
 
-    private static final String HANDLER_NAME = "withoutnotifications_handler";
+    private static final String HANDLER_NAME = "withoutnotification_handler";
     private static Field connectionField;
 
     static {

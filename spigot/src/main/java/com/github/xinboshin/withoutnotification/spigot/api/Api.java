@@ -1,7 +1,7 @@
-package com.github.xinboshin.withoutnotifications.spigot.api;
+package com.github.xinboshin.withoutnotification.spigot.api;
 
-import com.github.xinboshin.withoutnotifications.message.ConsoleMessages;
-import com.github.xinboshin.withoutnotifications.spigot.withoutnotifications;
+import com.github.xinboshin.withoutnotification.message.ConsoleMessages;
+import com.github.xinboshin.withoutnotification.spigot.WithoutNotification;
 import com.github.retrooper.packetevents.PacketEvents;
 
 import java.io.FileInputStream;
@@ -25,25 +25,25 @@ public class Api {
      *
      * @param time Delay of the setup.
      */
-    public static void setupwithoutnotifications(int time, boolean silent) {
+    public static void setupWithoutNotification(int time, boolean silent) {
         try {
-            try (FileInputStream in = new FileInputStream(withoutnotifications.getPropertiesFile())) {
+            try (FileInputStream in = new FileInputStream(WithoutNotification.getPropertiesFile())) {
                 Properties props = new Properties();
                 props.load(in);
                 if (Boolean.parseBoolean(props.getProperty("enforce-secure-profile"))) {
                     props.setProperty("enforce-secure-profile", String.valueOf(false));
-                    try (FileOutputStream out = new FileOutputStream(withoutnotifications.getPropertiesFile())) {
+                    try (FileOutputStream out = new FileOutputStream(WithoutNotification.getPropertiesFile())) {
                         props.store(out, "Minecraft server properties");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
                     ConsoleMessages.log(ConsoleMessages.SETUP_SUCCESS, getLogger()::warning);
-                    WithoutNotifications.getFoliaLib().getImpl().runLater(() -> {
+                    WithoutNotification.getFoliaLib().getImpl().runLater(() -> {
                         PacketEvents.getAPI().terminate();
                         getServer().spigot().restart();
                     }, time * 50L, TimeUnit.MILLISECONDS);
                 } else if (!silent) {
-                    getLogger().info("WithoutNotifications has been already set up.");
+                    getLogger().info("WithoutNotification has been already set up.");
                 }
             }
         } catch (IOException ex) {
