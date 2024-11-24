@@ -1,42 +1,42 @@
 config-version: 33
 
-# Should we collect anonymous data about your server?
-# false by default.
+# Должны ли мы собирать анонимные данные о вашем сервере?
+# по умолчанию установлено значение false.
 bstats: false
 
-# Should we remove [Not Secure] from /say?
-# There is a very small chance of catching something
-# that should not be caught. If that happens report the
-# incident to Github issues of withoutnotification.
+# Следует ли нам удалить [Not Secure] из /say?
+# Есть очень маленький шанс что-нибудь подхватить.
+# это не должно быть перехвачено. Если это произойдет, сообщите об этом
+# инцидент с проблемами на Github из-за отсутствия уведомления.
 filter-not-secure: true
 
-# We dont need that packet if
-# we dont sign messages.
+# Нам не нужен этот пакет, если
+# мы не подписываем сообщения.
 send-header: false
 
-# Should setup be ran on first start?
-# Useful for all kinds of setups or server hosts.
+# Следует ли запускать программу установки при первом запуске?
+# Полезно для всех видов настроек или узлов сервера.
 auto-setup: false
 
-# Should reporting chat messages be prevented?
-# Only works for versions above 1.19(.0).
+# Следует ли запретить сообщать о сообщениях в чате?
+# Работает только для версий выше 1.19(.0).
 block-chat-reports: true
 
-# Should popup appear for players?
-# Not recommended.
+# Должно ли появляться всплывающее окно для игроков?
+# Не рекомендуется.
 show-popup: false
 
-# --- SPIGOT ONLY ---
-# Readd clickable URLs in messages.
-# Could cause incompabilities!
+# --- ТОЛЬКО для SPIGOT ---
+# Перечитывайте ссылки в сообщениях, по которым можно перейти.
+# Это может привести к несовместимости!
 clickable-urls: false
 
-# --- SPIGOT ONLY ---
-# Location of server.properties file relative to server's folder.
-# Do not change unless needed.
+# --- ТОЛЬКО для SPIGOT ---
+# Расположение файла server.properties относительно папки сервера.
+# Не меняйте, если это не требуется.
 properties-location: server.properties
 
-# Do not touch ones below!
+# Не прикасайтесь к тем, что ниже!
 first-run: true
 ask-bstats: true
 setup-mode: true
