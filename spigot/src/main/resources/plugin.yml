@@ -10,7 +10,7 @@ softdepend:
   - ViaBackwards
   - ViaRewind
   - Geyser-Spigot
-authors: [ Kaspian ]
+authors: [ XINBOSHIN ]
 description: A plugin that removed annoying unsafe server popup.
 commands:
   withoutnotification:
