@@ -8,9 +8,16 @@ import java.util.UUID;
 
 public class VelocityPlatform extends Platform {
 
-@@ -17,7 +25,74 @@ public VelocityPlatform(ProxyServer server, APConfig apConfig) {
+    private final ProxyServer server;
+
+    public VelocityPlatform(ProxyServer server, APConfig apConfig) {
+        super(apConfig);
+        this.server = server;
+    }
 
     @Override
     public String getPlayerName(UUID playerUUID) {
         return server.getPlayer(playerUUID).orElseThrow().getUsername();
     }
+
+}
